@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,32 @@
     <title>Document</title>
 
     <style>
-
-        body{
-            font-family: Arial;            
+        body {
+            font-family: Arial;
         }
 
-        thead{
-            color:darkblue;
-        }
-        tbody{
-            color:blueviolet;
-        }
-        tfoot{
-            color:darkcyan;
+        thead {
+            color: darkblue;
         }
 
-        table, th, td {
+        tbody {
+            color: blueviolet;
+        }
+
+        tfoot {
+            color: darkcyan;
+        }
+
+        table,
+        th,
+        td {
             border: 1px solid black;
         }
-
     </style>
 
 
 </head>
+
 <body>
 
     <h3>Elemento thead, tbody y tfoot en una tabla</h3>
@@ -58,6 +62,89 @@
             </tr>
         </tfoot>
     </table>
-    
+
+    <!-- Forma de hacer una tabla -->
+    <div class="tabla" id="table">
+        <h3>Tecnologías</h3>
+        <table>
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Conocimiento</th>
+                    <th>End</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>10%</td>
+                    <td>Front-End</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>10%</td>
+                    <td>Front-End</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>10%</td>
+                    <td>Front-End</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>10%</td>
+                    <td>Back-End</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Codigo para crear barra de navegación -->
+    <div class="navbar"></div>
+    <nav>
+        <div class="logo">
+            Logo
+        </div>
+        <div class="links">
+            <a href="#table">Tecnologías</a>
+            <a href="#form-contact">Contato</a>
+            <a href="#networks">Redes Sociales</a>
+        </div>
+    </nav>
+
+    <!-- Codigo para containers -->
+    <div class="container">
+        <div class="row">
+            <div class="col bg-primary">Col-1</div>
+            <div class="col bg-secondary">Col-2</div>
+            <div class="col bg-warning">Col-3</div>
+        </div>
+
+    <!-- Codigo para fomularios -->
+        <div class="formulario" id="form-contact">
+            <form>
+                <h3>Formulario de contacto</h3>
+                <label for="nombre">Nombre(s)</label>
+                <input type="text" id="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido">
+                <br>
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa">
+                <br>
+                <label for="teléfono">Teléfono</label>
+                <input type="tel" id="teléfono">
+                <br>
+                <label for="Mensaje">Mensaje</label>
+                <textarea id="Mensaje" cols="30" rows="3"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
 </body>
+
 </html>
